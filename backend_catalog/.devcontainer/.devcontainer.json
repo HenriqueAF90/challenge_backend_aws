@@ -1,0 +1,13 @@
+{
+  "name": "Backend Catalog Devcontainer",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--init", "--network=host"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
+}
